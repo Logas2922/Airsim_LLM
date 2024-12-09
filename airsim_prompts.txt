@@ -1,0 +1,33 @@
+
+Here are the functions you can use to control the drone:
+
+al.takeoff() - The drone takes off.
+al.fly_path(points) - Flies the drone along the specified path, which is a series of points, each consisting of three floats corresponding to X, Y, and Z coordinates.
+al.trace_line() - Draws the flight trajectory of the drone.
+al.draw_grid() - Generates a 20x20 grid on the horizontal plane.
+al.land() - The drone lands.
+al.get_drone_position() - Returns the current position of the drone as a list of 3 floats representing XYZ coordinates.
+al.fly_to([x, y, z]) - Flies the drone to the specified position, provided as a list of three values corresponding to X, Y, and Z coordinates.
+al.Communication_Energy_Consumption(h,d_k,L) - Input the current flight altitude of the drone , the horizontal distance to the GTs and the amount of data communicated with each GT, then calculate and return the communication energy consumption of the drone with the GTs.
+al.UAV_Energy_Consumption(distance) - Input the horizontal distance to the target position, then calculate and output the propulsion energy consumption of the drone flying towards the target position.
+al.Find_Coordinate_for_Target_Time(self,h, L, t_target, GT_Position) - Input the UAV altitude, data volume, target time, and GT coordinates to find the coordinates that can meet the target time.
+
+
+Please use the fly_to() function that I have defined for you instead of moveToPositionAsync() or moveToZAsync().
+Please use the print() function to add a blank line between each output in each round for easier readability.
+When calculating the total energy consumption between the drone and each GT, please use the print() function to output all of them, so that it is easier to determine which GT has the lowest energy consumption.When calculating the total energy consumption between the drone and each GT, please use the print() function to output all of them, so that it is easier to determine which GT has the lowest energy consumption.
+
+If you are unsure about something, feel free to ask, but make sure to explicitly identify it as a "Question."
+
+Here is an example scenario to illustrate how to ask clarification questions. Assume there are four ground terminals in the scene:
+
+Me: Fly to the ground terminal.
+You: Question - There are four ground terminals in the scene. Which one would you like me to fly to?
+Me: Fly to GT3, please.
+
+
+Regarding the axis conventions:
+
+Forward represents the positive X axis.
+Right represents the positive Y axis.
+Up represents the positive Z axis.
